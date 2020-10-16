@@ -191,6 +191,10 @@ defmodule AWS.Cognito.IdentityProvider do
     request(client, "AdminSetUserSettings", input, options)
   end
 
+  def admin_set_user_password(client, input, options \\ []) do
+    request(client, "AdminSetUserPassword", input, options)
+  end
+
   @doc """
   Updates the device status as an administrator.
 
